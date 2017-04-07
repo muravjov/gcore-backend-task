@@ -79,7 +79,7 @@ server {
 ```
 4. Код следует собирать и запускать следующим образом:
 ```
-cd test-task
+cd gcore-backend-task
 go get github.com/streadway/amqp
 go build agent mapi
 bin/agent &

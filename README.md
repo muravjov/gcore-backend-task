@@ -7,7 +7,7 @@
 * agent - ожидают данные от mapi (бесконечно) и после получения генерируют конфиг nginx на их основе, который распечатывают на стандартный вывод (stdout)
 
 Условия:
- 1. и mapi, и agent подключаются как RabbitMQ по адресу **amqp://localhost:5672/**
+ 1. и mapi, и agent подключаются к RabbitMQ по адресу **amqp://localhost:5672/**
  1. agent генерируют конфиг nginx-а с помощью двух шаблонов, **vhostTemplate** и **nginxTemplate** и библиотеки https://golang.org/pkg/text/template/:
 
 ```

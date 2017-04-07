@@ -55,6 +55,10 @@ http {
 ```
 error_log  /tmp/error.log;
 pid        /tmp/nginx.pid;
+
+events {
+    worker_connections  65536;
+}
 ...
 upstream node2.nodeapp.top {
   server node.nodeapp.top max_fails=0;
